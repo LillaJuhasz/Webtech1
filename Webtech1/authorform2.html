@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="css/authorform2.css">
+    <meta charset="UTF-8">
+    <title>Authorform</title>
+</head>
+<body onscroll="loremScroll()">
+<div id="everything">
+    <div id="header">
+        <div id="banner">
+            <div id="menuBar">
+                <table class="tableasd">
+                    <tr>
+                        <td>Library</td>
+                        <td><span class="menuButton"><a href="index.html">Home</a></span></td>
+                        <td><span class="menuButton"><a href="bookform2.html">Add Books</a></span></td>
+                        <td><span class="menuButton"><a href="authorform2.html">Add Authors</a></span></td>
+                        <td><span class="menuButton"><a href="asd.html">asd</a></span></td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+    <div id="content">
+        <form action="addBook" method="post">
+            <table class="tableasd">
+                <tr>
+                    <td>author</td>
+                    <td><input type="text" name="title" required="required" autofocus></td>
+                </tr>
+                <tr>
+                    <td><input type="submit" value="Add author"/></td>
+                </tr>
+                <tr>
+                    <td>nationality</td>
+                    <td><select name="nationality" required="required">
+                        <option value="hungarian">Hungarian</option>
+                        <option value="english">English</option>
+                    </select></td>
+                </tr>
+                <tr>
+                    <td>birthday</td>
+                    <td><input type="date" name="birthday"/></td>
+                </tr>
+            </table>
+        </form>
+
+    </div>
+</div>
+</body>
+</html>
