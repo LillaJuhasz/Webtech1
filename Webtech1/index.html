@@ -1,20 +1,39 @@
 <html>
 <head>
 	<link rel="stylesheet" href="css/index.css">
+	<script type="application/javascript" src="js/jquery-3.1.1.1.min.js"></script>
+	<script type="application/javascript" src="js/index.js"></script>
+	<script>
+        $(document).ready(function () {
+            $.each($(".menuButton"), function (mbIndex, mbValue) {
+                $(mbValue).click(function (event) {
+                    event.preventDefault();
+                    if (!($(this).find('a').attr("href") == "index.html")) {
+                        $("#content").load($(this).find('a').attr("href"));
+                    }
+                    else {
+                        open("index.html", "_self");
+                    }
+                });
+            })
+        })
+	</script>
 	<title>1.gyakorlat</title>
 </head>
 <body>
-<div id="menuBar">
-	<table class="tableasd">
-		<tr>
-			<td>Library</td>
-			<td><span class="menuButton"><a href="index.html">Home</a></span></td>
-			<td><span class="menuButton"><a href="bookform2.html">Add Books</a></span></td>
-			<td><span class="menuButton"><a href="authorform2.html">Add Authors</a></span></td>
-			<td><span class="menuButton"><a href="asd.html">asd</a></span></td>
-		</tr>
-	</table>
-</div>
+<div id="everything">
+	<div id="header">
+		<div id="banner">
+			<div id="menuBar">
+				<span class="menuButton"><a href="index.html">Home</a></span>
+				<span class="menuButton"><a href="bookform.html">Add Books</a></span>
+				<span class="menuButton"><a href="authorform.html">Add Authors</a></span></td>
+				<span class="menuButton"><a href="bookauthors.html">Authors</a></span>
+			</div>
+			Library
+
+		</div>
+	</div>
 	<div id="content">
 		<h1>Ez a cim</h1>
 			<table>
