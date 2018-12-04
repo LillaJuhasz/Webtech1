@@ -1,0 +1,201 @@
+body{
+    background: #e55ddf;
+    margin: 0;
+}
+
+.menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background: white;
+    padding: 20px;
+}
+
+.menu-item {
+    display: flex;
+    width: 20%;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    color: #e55ddf;
+    border: 1px dashed;
+    border-radius: 10px;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    position: relative;
+    height: 100%;
+}
+
+.contentbox {
+    position: relative;
+    top: 0;
+    padding: 10px 20px;
+    background: white;
+    width: 600px;
+    margin-top: 50px;
+    border-radius: 8px;
+}
+
+.brainfuck {
+    position: absolute;
+    top: 150px;
+    width: 300px;
+    background: #e2e2e2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #999;
+}
+
+.close-btn {
+    color: white;
+    background-color: red;
+    border: 1px solid grey;
+    align-self: flex-end;
+    transform: translateY(0);
+    cursor: pointer;
+}
+
+.close-left {
+    align-self: flex-start;
+    transform: translateY(0);
+}
+
+.close-down {
+    align-self: flex-start;
+    transform: translateY(123px);
+}
+
+.close-right {
+    align-self: flex-end;
+    transform: translateY(123px);
+}
+
+.close-top {
+    align-self: flex-end;
+    transform: translateY(0);
+}
+
+.text1 {
+    font-size: 20px;
+    padding: 10px 0;
+}
+
+.ok {
+    margin-top: 30px;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+.image-on {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: growth 60s infinite alternate;
+}
+
+.input-holder {
+    margin: 10px 0;
+    display: flex;
+    align-items: center;
+}
+
+.input-holder label {
+    min-width: 120px;
+    display: inline-block;
+    text-align: right;
+    line-height: 1;
+    color: #e55ddf;
+}
+
+.controller {
+    font-size: 14px;
+    padding: 5px 7px;
+    margin-left: 10px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    width: 100%;
+}
+
+.controller:focus {
+    outline: none;
+    border-color: #e55ddf;
+}
+
+.submit {
+    align-self: center;
+    padding: 10px 20px;
+    margin-top: 20px;
+    border-radius: 4px;
+    border: none;
+    background: #e55ddf;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.manufacturer-list {
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #ddd;
+    cursor: pointer;
+}
+
+.title {
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 20px;
+    color: #e55ddf;
+    font-weight: bold;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+.hidden {
+    display: none;
+}
+
+.eyecancer {
+    animation: eye-cancer 500ms infinite;
+}
+
+@keyframes growth {
+    from {
+        transform: scale(1);
+    }
+    to {
+        transform: scale(10);
+    }
+}
+
+@keyframes eye-cancer {
+    0% {
+        background: red;
+    }
+    25% {
+        background: yellow;
+    }
+    50% {
+        background: blue;
+    }
+    75% {
+        background: green;
+    }
+    100% {
+        background: red;
+    }
+}
